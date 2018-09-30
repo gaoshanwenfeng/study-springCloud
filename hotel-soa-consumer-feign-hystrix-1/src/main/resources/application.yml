@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: hotel-soa-consumer-fegin-hytrix
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+server:
+  port: 8206
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+feign:
+  hystrix:
+    enabled: true

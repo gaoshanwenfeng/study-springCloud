@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: hotel-soa-hystrix-turbine
+server:
+  port: 7003
+management:
+  port: 7002
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+turbine:
+  app-config: hotel-soa-consumer-fegin-hytrix
+  cluster-name-expression: new String("default")
+  combine-host-port: true
