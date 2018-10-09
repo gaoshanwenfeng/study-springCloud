@@ -6,7 +6,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:7000/eureka/
 server:
-  port: 9105
+  port: 9106
 management:
   endpoints:
     web:

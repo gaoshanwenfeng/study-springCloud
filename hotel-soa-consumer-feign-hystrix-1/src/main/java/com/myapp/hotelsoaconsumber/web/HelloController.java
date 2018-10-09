@@ -22,6 +22,7 @@ public class HelloController {
     @GetMapping("/")
     public String hello(@RequestParam String name) {
     	name += "!!!!";
+//    	return "Hello! Fallback...";
         return proxyHytrixHotelSoaRemote.hello(name);
     }
 

@@ -3,8 +3,6 @@ spring:
     name: hotel-soa-hystrix-turbine
 server:
   port: 7003
-management:
-  port: 7002
 eureka:
   client:
     service-url:
