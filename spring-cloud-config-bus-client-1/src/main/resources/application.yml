@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-cloud-config-bus-client
+  cloud:
+    bus:
+      trace:
+        enabled: true
+      enabled: true
+  rabbitmq: 
+    host: 10.70.209.171
+    port: 5672
+    username: admin
+    password: adminRoot
+server:
+  port: 9204
+management:
+  endpoints:
+    web:
+      exposure:
+        include:  "*"
+  security:
+     enabled: false

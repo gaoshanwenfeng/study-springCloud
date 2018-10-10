@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: spring-cloud-config-bus-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gaoshanwenfeng/study-springCloud.git
+          search-paths: config-repo
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+  rabbitmq: 
+    host: 10.70.209.171
+    port: 5672
+    username: admin
+    password: adminRoot
+server:
+  port: 7040
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
