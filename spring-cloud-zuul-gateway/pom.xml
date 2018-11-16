@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.myapp.zipkintrace</groupId>
-	<artifactId>spring-cloud-zipkintrace-b</artifactId>
+	<groupId>com.myapp.apigateway</groupId>
+	<artifactId>spring-cloud-zuul-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>zipkin-trace-b</name>
+	<name>spring-cloud-zuul-gateway</name>
 	<description>Spring Boot</description>
 
 	<parent>
@@ -34,23 +34,14 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter</artifactId>
 		</dependency>
-		
 		<dependency>
-		    <groupId>org.springframework.boot</groupId>
-		    <artifactId>spring-boot-starter-webflux</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
 		</dependency>
 		<dependency>
 		    <groupId>org.springframework.cloud</groupId>
 		    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-		<dependency>
-		    <groupId>org.springframework.cloud</groupId>
-		    <artifactId>spring-cloud-starter-sleuth</artifactId>
-		</dependency>
-		<dependency>
-		    <groupId>org.springframework.cloud</groupId>
-		    <artifactId>spring-cloud-starter-zipkin</artifactId>
-		</dependency>		
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -82,15 +73,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<!--  
-			<plugin>  
-			    <groupId>org.apache.maven.plugins</groupId>  
-			    <artifactId>maven-war-plugin</artifactId>  
-			    <version>2.6</version>  
-			</plugin> 
-			-->
 		</plugins>
-		
 	</build>
 
 
